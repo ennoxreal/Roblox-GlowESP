@@ -1,0 +1,372 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local cham = Instance.new("ScreenGui")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Shadow = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Gradient = Instance.new("ImageLabel")
+local Button = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Shadow_2 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Pattern = Instance.new("ImageLabel")
+local directions_walk = Instance.new("ImageButton")
+local Gradient_2 = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Button_2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Shadow_3 = Instance.new("Frame")
+
+--Properties:
+
+cham.Name = "cham"
+cham.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+TextButton.Parent = cham
+TextButton.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.280198038, 0)
+TextButton.Size = UDim2.new(0, 43, 0, 39)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.GothamMedium
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = TextButton
+
+Shadow.Name = "Shadow"
+Shadow.Parent = TextButton
+Shadow.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = Shadow
+
+TextLabel.Parent = TextButton
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.544444442, 0)
+TextLabel.Size = UDim2.new(1, -20, 1, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "X"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Gradient.Name = "Gradient"
+Gradient.Parent = cham
+Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient.BackgroundTransparency = 1.000
+Gradient.Position = UDim2.new(0.225071236, 0, 0.132734537, 0)
+Gradient.Size = UDim2.new(0, 385, 0, 367)
+Gradient.Visible = false
+Gradient.Image = "rbxassetid://3570695787"
+Gradient.ScaleType = Enum.ScaleType.Slice
+Gradient.SliceCenter = Rect.new(100, 100, 100, 100)
+Gradient.SliceScale = 0.120
+
+Button.Name = "Button"
+Button.Parent = Gradient
+Button.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.0384006947, 0, 0.163301587, 0)
+Button.Size = UDim2.new(0, 180, 0, 45)
+Button.ZIndex = 2
+Button.Font = Enum.Font.GothamMedium
+Button.Text = "Off"
+Button.TextColor3 = Color3.fromRGB(255, 0, 0)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+
+UICorner_3.Parent = Button
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = Button
+Shadow_2.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_4.Parent = Shadow_2
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(102, 45, 113)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(197, 66, 110))}
+UIGradient.Parent = Gradient
+
+Pattern.Name = "Pattern"
+Pattern.Parent = Gradient
+Pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern.BackgroundTransparency = 1.000
+Pattern.Position = UDim2.new(0.000113690272, 0, 0.00272479467, 0)
+Pattern.Size = UDim2.new(0, 385, 0, 367)
+Pattern.Visible = false
+Pattern.ZIndex = 9
+Pattern.Image = "rbxassetid://121480522"
+Pattern.ImageTransparency = 0.600
+Pattern.ScaleType = Enum.ScaleType.Tile
+Pattern.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern.TileSize = UDim2.new(0, 45, 0, 45)
+
+directions_walk.Name = "directions_walk"
+directions_walk.Parent = Gradient
+directions_walk.BackgroundTransparency = 1.000
+directions_walk.Position = UDim2.new(0.0376623385, 0, 0.0531335138, 0)
+directions_walk.Size = UDim2.new(0, 36, 0, 40)
+directions_walk.ZIndex = 2
+directions_walk.Image = "rbxassetid://3926305904"
+directions_walk.ImageRectOffset = Vector2.new(84, 564)
+directions_walk.ImageRectSize = Vector2.new(36, 36)
+
+Gradient_2.Name = "Gradient"
+Gradient_2.Parent = Gradient
+Gradient_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Gradient_2.BorderSizePixel = 0
+Gradient_2.Position = UDim2.new(0.13636364, 0, 0.0585831068, 0)
+Gradient_2.Size = UDim2.new(0, 104, 0, 35)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(224, 43, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(168, 3, 3))}
+UIGradient_2.Parent = Gradient_2
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Gradient_2
+
+TextLabel_2.Parent = Gradient_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 104, 0, 38)
+TextLabel_2.Font = Enum.Font.TitilliumWeb
+TextLabel_2.Text = "Glow ESP"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Button_2.Name = "Button"
+Button_2.Parent = Gradient
+Button_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_2.BorderSizePixel = 0
+Button_2.Position = UDim2.new(0.887678087, 0, -0.000780448318, 0)
+Button_2.Size = UDim2.new(0, 43, 0, 45)
+Button_2.ZIndex = 2
+Button_2.Font = Enum.Font.GothamMedium
+Button_2.Text = ""
+Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.TextScaled = true
+Button_2.TextSize = 14.000
+Button_2.TextWrapped = true
+
+TextLabel_3.Parent = Button_2
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.523255825, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.GothamMedium
+TextLabel_3.Text = "X"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = Button_2
+Shadow_3.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Size = UDim2.new(1, 0, 1, 4)
+
+-- Scripts:
+
+local function ZXSFRU_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local resim = script.Parent.Parent.Gradient
+	local x = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		resim.Visible = true
+		resim.BackgroundTransparency = 0
+		x.Visible = false
+		x.BackgroundTransparency = 1
+	end)
+end
+coroutine.wrap(ZXSFRU_fake_script)()
+local function TMCCR_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	_G.chams = false
+	
+	local dwEntities = game:GetService("Players")
+	local dwLocalPlayer = dwEntities.LocalPlayer 
+	local dwRunService = game:GetService("RunService")
+	local settings_tbl = {
+		ESP_Enabled = true,
+		ESP_TeamCheck = false,
+		Chams = true,
+		Chams_Color = Color3.fromRGB(0,0,255),
+		Chams_Transparency = 0.1,
+		Chams_Glow_Color = Color3.fromRGB(255,0,0)
+	}
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.chams == false then
+			_G.chams = true
+			script.Parent.Text = "On"
+			script.Parent.TextColor3 = Color3.fromRGB(0, 255, 0)
+	
+			function destroy_chams(char)
+	
+				for k,b in next, char:GetChildren() do 
+	
+					if b:IsA("BasePart") and b.Transparency ~= 1 then
+	
+						if b:FindFirstChild("Glow") and 
+							b:FindFirstChild("Chams") then
+	
+							b.Glow:Destroy()
+							b.Chams:Destroy() 
+	
+						end 
+	
+					end 
+	
+				end 
+	
+			end
+	
+			dwRunService.Heartbeat:Connect(function()
+	
+				if settings_tbl.ESP_Enabled then
+	
+					for k,v in next, dwEntities:GetPlayers() do 
+	
+						if v ~= dwLocalPlayer then
+	
+							if v.Character and
+								v.Character:FindFirstChild("HumanoidRootPart") and 
+								v.Character:FindFirstChild("Humanoid") and 
+								v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+	
+								if settings_tbl.ESP_TeamCheck == false then
+	
+									local char = v.Character 
+	
+									for k,b in next, char:GetChildren() do 
+	
+										if b:IsA("BasePart") and 										b.Transparency ~= 1 then
+	
+											if settings_tbl.Chams then
+	
+												if not b:FindFirstChild("Glow") and
+													not b:FindFirstChild("Chams") then
+	
+													local chams_box = Instance.new("BoxHandleAdornment", b)
+													chams_box.Name = "Chams"
+													chams_box.AlwaysOnTop = true 
+													chams_box.ZIndex = 4 
+													chams_box.Adornee = b 
+													chams_box.Color3 = settings_tbl.Chams_Color
+													chams_box.Transparency = settings_tbl.Chams_Transparency
+													chams_box.Size = b.Size + Vector3.new(0.02, 0.02, 0.02)
+	
+													local glow_box = Instance.new("BoxHandleAdornment", b)
+													glow_box.Name = "Glow"
+													glow_box.AlwaysOnTop = false 
+													glow_box.ZIndex = 3 
+													glow_box.Adornee = b 
+													glow_box.Color3 = settings_tbl.Chams_Glow_Color
+													glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
+	
+												end
+	
+											else
+	
+												destroy_chams(char)
+	
+											end
+	
+										end
+	
+									end
+	
+								else
+	
+									if v.Team == dwLocalPlayer.Team then
+										destroy_chams(v.Character)
+									end
+	
+								end
+	
+							else
+	
+								destroy_chams(v.Character)
+	
+							end
+	
+						end
+	
+					end
+	
+				else 
+	
+					for k,v in next, dwEntities:GetPlayers() do 
+	
+						if v ~= dwLocalPlayer and 
+							v.Character and 
+							v.Character:FindFirstChild("HumanoidRootPart") and 
+							v.Character:FindFirstChild("Humanoid") and 
+							v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+	
+							destroy_chams(v.Character)
+	
+						end
+	
+					end
+	
+				end
+	
+			end)
+		else
+			_G.chams = false
+			script.Parent.Text = "Off"
+			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+	
+end
+coroutine.wrap(TMCCR_fake_script)()
+local function HWWCTH_fake_script() -- Button_2.LocalScript 
+	local script = Instance.new('LocalScript', Button_2)
+
+	local sayfa = script.Parent.Parent
+	local buton2 = script.Parent.Parent.Parent.TextButton
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		sayfa.Visible = false
+		sayfa.BackgroundTransparency = 1
+		buton2.Visible = true
+		buton2.BackgroundTransparency = 0
+	end)
+	
+end
+coroutine.wrap(HWWCTH_fake_script)()
