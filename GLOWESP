@@ -24,6 +24,16 @@ local TextLabel_2 = Instance.new("TextLabel")
 local Button_2 = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local Shadow_3 = Instance.new("Frame")
+local line = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Shadow_4 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local format_align_center = Instance.new("ImageButton")
+local Gradient_3 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -87,8 +97,8 @@ Button.Name = "Button"
 Button.Parent = Gradient
 Button.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
 Button.BorderSizePixel = 0
-Button.Position = UDim2.new(0.0384006947, 0, 0.163301587, 0)
-Button.Size = UDim2.new(0, 180, 0, 45)
+Button.Position = UDim2.new(0.0384007059, 0, 0.163301602, 0)
+Button.Size = UDim2.new(0, 180, 0, 36)
 Button.ZIndex = 2
 Button.Font = Enum.Font.GothamMedium
 Button.Text = "Off"
@@ -195,9 +205,80 @@ Shadow_3.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
 Shadow_3.BorderSizePixel = 0
 Shadow_3.Size = UDim2.new(1, 0, 1, 4)
 
+line.Name = "line"
+line.Parent = Gradient
+line.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
+line.BorderSizePixel = 0
+line.Position = UDim2.new(0.0376623347, 0, 0.5, 0)
+line.Size = UDim2.new(0, 180, 0, 36)
+line.ZIndex = 2
+line.Font = Enum.Font.GothamMedium
+line.Text = "Off"
+line.TextColor3 = Color3.fromRGB(255, 0, 0)
+line.TextScaled = true
+line.TextSize = 14.000
+line.TextWrapped = true
+
+UICorner_6.Parent = line
+
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = line
+Shadow_4.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
+Shadow_4.BorderSizePixel = 0
+Shadow_4.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_7.Parent = Shadow_4
+
+format_align_center.Name = "format_align_center"
+format_align_center.Parent = line
+format_align_center.BackgroundTransparency = 1.000
+format_align_center.Position = UDim2.new(0.0277777873, 0, -0.916666687, 0)
+format_align_center.Size = UDim2.new(0, 25, 0, 25)
+format_align_center.ZIndex = 2
+format_align_center.Image = "rbxassetid://3926305904"
+format_align_center.ImageRectOffset = Vector2.new(584, 4)
+format_align_center.ImageRectSize = Vector2.new(36, 36)
+
+Gradient_3.Name = "Gradient"
+Gradient_3.Parent = Gradient
+Gradient_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Gradient_3.BorderSizePixel = 0
+Gradient_3.Position = UDim2.new(0.13636364, 0, 0.391008168, 0)
+Gradient_3.Size = UDim2.new(0, 104, 0, 32)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 206, 223)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(91, 136, 229))}
+UIGradient_3.Parent = Gradient_3
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = Gradient_3
+
+TextLabel_4.Parent = Gradient_3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0, 104, 0, 32)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Line ESP"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Gradient
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.722077966, 0, 0.910081744, 0)
+TextLabel_5.Size = UDim2.new(0, 121, 0, 33)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Made by ennox#1000"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 127)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
 -- Scripts:
 
-local function ZXSFRU_fake_script() -- TextButton.LocalScript 
+local function OSHS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local resim = script.Parent.Parent.Gradient
@@ -210,8 +291,8 @@ local function ZXSFRU_fake_script() -- TextButton.LocalScript
 		x.BackgroundTransparency = 1
 	end)
 end
-coroutine.wrap(ZXSFRU_fake_script)()
-local function TMCCR_fake_script() -- Button.LocalScript 
+coroutine.wrap(OSHS_fake_script)()
+local function CZJXUK_fake_script() -- Button.LocalScript 
 	local script = Instance.new('LocalScript', Button)
 
 	_G.chams = false
@@ -354,8 +435,8 @@ local function TMCCR_fake_script() -- Button.LocalScript
 	end)
 	
 end
-coroutine.wrap(TMCCR_fake_script)()
-local function HWWCTH_fake_script() -- Button_2.LocalScript 
+coroutine.wrap(CZJXUK_fake_script)()
+local function TPCW_fake_script() -- Button_2.LocalScript 
 	local script = Instance.new('LocalScript', Button_2)
 
 	local sayfa = script.Parent.Parent
@@ -369,4 +450,54 @@ local function HWWCTH_fake_script() -- Button_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(HWWCTH_fake_script)()
+coroutine.wrap(TPCW_fake_script)()
+local function JVLJ_fake_script() -- line.LocalScript 
+	local script = Instance.new('LocalScript', line)
+
+	_G.line = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.line == false then
+			_G.line = true
+			script.Parent.Text = "On"
+			script.Parent.TextColor3 = Color3.fromRGB(0, 255, 0)
+			
+			local camera = workspace.CurrentCamera
+	
+			for i,v in pairs(game.Players:GetPlayers()) do
+				if v.Character.HumanoidRootPart ~= nil and v ~= game.Players.LocalPlayer then
+					local vector, onScreen = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+					local Line = Drawing.new("Line")
+					Line.Visible = true
+					Line.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 2)
+					Line.To = Vector2.new(vector.X, vector.Y)
+					Line.Color = Color3.fromRGB(255, 0, 0)
+					Line.Thickness = 2
+					Line.Transparency = 1
+	
+	
+					function esp()
+						game:GetService("RunService").RenderStepped:Connect(function(step)
+							if v.Character.HumanoidRootPart ~= nil then
+								local vector, onScreen = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+								if onScreen == true then
+									Line.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 2)
+									Line.To = Vector2.new(vector.X, vector.Y)
+									Line.Visible = true
+								else
+									Line.Visible = false
+								end
+							end
+						end)
+					end
+					coroutine.wrap(esp)()
+				end
+			end
+		else
+			_G.line = false
+			script.Parent.Text = "Off"
+			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+end
+coroutine.wrap(JVLJ_fake_script)()
